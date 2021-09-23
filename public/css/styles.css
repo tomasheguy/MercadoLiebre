@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    font-size: 14;
+}
+p {font-size: 12px;}
+h4{font-size: 12px;}
+h2 {font-size: 12px;}
+nav {font-size: 12px;}
+.Titulares {font-size: 24px;}
+.Precios {font-size: 18px;}
+.burger-menu {
+    background-color:#03264C ;
+    font-size: 30px;
+    color:white;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;}
+.search {font-size: 40px;}
+input {font-size: 50px;}
+.tagline {
+    padding: 10px;
+    font-size: 12px;
+    }
+footer {align-items: center;
+        text-align: center;}
+
