@@ -11,8 +11,9 @@ input {
     font-size: 30px;
     color: #666;
     width: 400px;}
-.fas fa-search {
+.search i {
         background-color: white;
+        width: 44px;
     }
 .tagline {
     padding: 10px;
@@ -22,6 +23,7 @@ input {
 
 .top-menu ul li {
     list-style-type: none;
+    padding-left: 0cm;
 }
 
 .top-menu {
@@ -33,13 +35,23 @@ input {
     text-decoration: none;
 }
 .burger-menu {
-    background-color:#054e9c ;
+    
+    display: flex;
+    background-color:#1259C3 ;
     font-size: 30px;
     color:white;
     width: 30px;
     height: 30px;
     padding: 14px;
-    align-content: center;
+    
+    border-radius:5px
+
+    
+    /*vertical-align: middle ;*/
+    
+    
+
+
     }
 
 main {
