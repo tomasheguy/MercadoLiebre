@@ -36,6 +36,7 @@ input {
 }
 .burger-menu {
     
+    margin: auto;
     display: flex;
     background-color:#1259C3 ;
     font-size: 30px;
@@ -46,16 +47,11 @@ input {
     
     border-radius:5px
 
-    
-    /*vertical-align: middle ;*/
-    
-    
-
-
     }
 
 main {
         background-color: #ebebeb;
+        align-items: center;
     }
 
 p {font-size: 12px;}
