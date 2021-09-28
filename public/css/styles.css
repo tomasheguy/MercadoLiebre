@@ -3,22 +3,33 @@ body {
     background-color: #ebebeb;
     font-size: 16;
 }
+.logo {
+    width: 50%;
+}
+img {
+    width: 100%;
+}
+
 header {
     background-color: #EAC926;
 }
 
 input {
-    font-size: 30px;
+    font-size: 16px;
     color: #666;
-    width: 400px;}
+    width: 60%;}
 .search i {
         background-color: white;
-        width: 44px;
+        width: 20px;
+        height: 20px;
+        border: black solid 1px;
+
     }
 .tagline {
     padding: 10px;
     font-size: 12px;
     text-align: center;
+    font-style: normal;
     }
 
 .top-menu ul li {
@@ -41,9 +52,9 @@ input {
     background-color:#1259C3 ;
     font-size: 30px;
     color:white;
-    width: 30px;
-    height: 30px;
-    padding: 14px;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
     
     border-radius:5px
 
@@ -52,12 +63,30 @@ input {
 main {
         background-color: #ebebeb;
         align-items: center;
+        width: 90%;
     }
 
 p {font-size: 12px;}
-h4{font-size: 12px;}
+/* h4{font-size: 12px;} */
 
 nav {font-size: 12px;}
+article {margin-bottom: 10px;
+    background-color: white;}
+
+.descripcion{
+    border-top: 1px #ebebeb solid;
+    padding: 15px;
+
+}
+
+.descripcion i {
+    color: green;
+    border: solid green 1px;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
 .Titulares {font-size: 24px;}
 .Precios {font-size: 18px;}
 
@@ -73,7 +102,7 @@ footer h2 {
 
 footer i  {
     color: #054e9c;
-    size: 4em;
+    
     margin-bottom: 20px;
 }
 
@@ -86,10 +115,27 @@ footer p {
     font-weight: normal;
     text-align: left;
 }
-footer h3{
-    columns: #ebebeb ;
-    font-weight: normal;
-    margin-top: 10px;
+
+
+article h3 {
+    display: none;
 }
 
+.top-menu {
+    display: none;
+}
+
+@media (min-width: 361px){
+    article h3 {display: initial;}
+    article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    .top-menu {
+        display: initial;
+    }
+}
+
+@media (min-width: 769px){
+    article h3 {display: initial;}
+    article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    .burger-menu {display: none}
+}
 
