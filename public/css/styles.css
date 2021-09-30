@@ -1,90 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     font-size: 16;
 }
-.logo {
-    width: 50%;
-}
-img {
-    width: 100%;
-}
 
 header {
     background-color: #EAC926;
+    padding: 20px;
+}
+.top-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.top-top-header {
+    display: flex;
+    max-width: 48%;
+}
+
+
+
 input {
-    font-size: 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
     color: #666;
-    width: 60%;}
+    align-self: center;}
 .search i {
         background-color: white;
-        width: 20px;
-        height: 20px;
-        border: black solid 1px;
-
+        width: 14px;
+        height: 18px;
+        
+        border-left: gray solid 1px;
     }
 .tagline {
-    padding: 10px;
+    padding-left: 5px;
     font-size: 12px;
+    font-weight: 400;
     text-align: center;
     font-style: normal;
     }
 
-.top-menu ul li {
-    list-style-type: none;
-    padding-left: 0cm;
-}
 
-.top-menu {
-    margin-left: 0cm;
-}
-
-.top-menu ul li a {
-
-    text-decoration: none;
-}
 .burger-menu {
     
     margin: auto;
     display: flex;
     background-color:#1259C3 ;
-    font-size: 30px;
+    font-size: 20px;
     color:white;
-    width: 25px;
-    height: 25px;
-    padding: 8px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
     
     border-radius:5px
 
     }
 
+.bottom-header {
+    display: none;
+}
+
+img {
+    width: 100%;
+    padding: 0cm;
+}
+
+
 main {
         background-color: #ebebeb;
-        align-items: center;
-        width: 90%;
     }
 
 p {font-size: 12px;}
-/* h4{font-size: 12px;} */
+
 
 nav {font-size: 12px;}
 article {margin-bottom: 10px;
     background-color: white;}
 
 .descripcion{
+    position: relative;
     border-top: 1px #ebebeb solid;
     padding: 15px;
 
 }
 
 .descripcion i {
+    position:absolute;
+    right: 20px;
+    top: -15px;
     color: green;
     border: solid green 1px;
     border-radius: 50%;
     padding: 5px;
     
+}
+
+.descripcion-flex {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.Precios {
+    flex-grow: 30;
+}
+
+.Descuento {
+    flex-grow: 70;
 }
 
 .Titulares {font-size: 24px;}
@@ -128,14 +161,80 @@ article h3 {
 @media (min-width: 361px){
     article h3 {display: initial;}
     article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    .bottom-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .bottom-menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0cm;
+    }
     .top-menu {
-        display: initial;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0cm;
+        }
+    .bottom-menu ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding-left: 0cm;
+            margin:0cm;
+        }
+        
+    .top-menu ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding-left: 0cm;
+        margin:0cm;
+        }
+    
+    
+    .bottom-menu ul li a {
+        text-decoration: none;
+    }
+    .top-menu ul li a {
+        text-decoration: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #222222 ;
+        display: inline-block;
+        padding: 5px 0px;
+        font-size: 17px;
+    }
+    .burger-menu {display: none}
+    
+    
+    .article-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    article {
+        
+        max-width: 48%;
+        
     }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
+    .top-header {
+        display:flex;
+        flex-direction: row;
+    }
     article h3 {display: initial;}
-    article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    article {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 24%;}
     .burger-menu {display: none}
+    
 }
 
