@@ -1,8 +1,4 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -17,36 +13,52 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .top-top-header {
     display: flex;
-    max-width: 48%;
+    max-width: 100%;
+    justify-content: space-between;
+    padding-bottom: 5px;
 }
+
+.logo {
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;}
 
 
 
 input {
     font-size: 14px;
+    width: 100%;
     border: none;
-    border-radius: 8px;
+    border-radius: 3px;
     color: #666;
-    align-self: center;}
+    height: 25px;
+    align-self: center;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin: 0px;
+    }
 .search i {
         background-color: white;
-        width: 14px;
-        height: 18px;
-        
+        width: 16px;
+        height: 20px;
+        margin: -20px;
+        color: #666;
         border-left: gray solid 1px;
+        border-radius: 3px;
     }
 .tagline {
     padding-left: 5px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     font-style: normal;
+    margin-bottom: 5px;
     }
 
 
@@ -57,11 +69,11 @@ input {
     background-color:#1259C3 ;
     font-size: 20px;
     color:white;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     padding: 5px;
     
-    border-radius:5px
+    border-radius:2px
 
     }
 
@@ -69,9 +81,9 @@ input {
     display: none;
 }
 
-img {
-    width: 100%;
-    padding: 0cm;
+.banner {
+    padding: 0px;
+    width: 100vw;
 }
 
 
@@ -91,6 +103,11 @@ article {margin-bottom: 10px;
     border-top: 1px #ebebeb solid;
     padding: 15px;
 
+}
+
+img {
+    width: 100%;
+    padding: 0cm;
 }
 
 .descripcion i {
@@ -114,10 +131,12 @@ article {margin-bottom: 10px;
 
 .Precios {
     flex-grow: 30;
+    font-size: 20px;
 }
 
 .Descuento {
     flex-grow: 70;
+    color: green;
 }
 
 .Titulares {font-size: 24px;}
@@ -161,6 +180,22 @@ article h3 {
 @media (min-width: 361px){
     article h3 {display: initial;}
     article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .top-top-header {   
+        max-width: 60%;    
+    }
+    .mid-top-header {   
+        max-width: 40%;    
+    }
+
+    .logo {width: 20vw;}
+    .search {width: 38vw;}
+    .tagline {width: 38vw;}
     .bottom-header {
         display: flex;
         flex-direction: row;
@@ -171,12 +206,12 @@ article h3 {
     .bottom-menu {
         display: flex;
         flex-direction: row;
-        margin-left: 0cm;
+        margin-left: 0.5cm;
     }
     .top-menu {
         display: flex;
         flex-direction: row;
-        margin-left: 0cm;
+        margin-left: 0.5cm;
         }
     .bottom-menu ul {
             display: flex;
@@ -191,15 +226,26 @@ article h3 {
         flex-direction: row;
         list-style: none;
         padding-left: 0cm;
-        margin:0cm;
+        margin-right:0cm;
         }
     
     
     .bottom-menu ul li a {
         text-decoration: none;
+        
     }
     .top-menu ul li a {
         text-decoration: none;
+        
+    }
+
+    .bottom-menu ul li {
+        
+        margin: 10px;
+    }
+    .top-menu ul li {
+        
+        margin: 10px;
     }
 
     nav a {
