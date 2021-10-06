@@ -50,9 +50,9 @@ header {
     margin: 0px;
     }
 .search i {
-        background-color: white;
+        background-color:none;
         width: 16px;
-        height: 20px;
+        height: 14px;
         margin: -20px;
         color: #666;
         border-left: gray solid 1px;
@@ -183,6 +183,38 @@ article h3 {
     display: none;
 }
 
+.signin-form
+.registration-form {
+    padding: 20 px 15 px;
+
+}
+
+.control-formulario {
+    margin-bottom: 20px;
+}
+
+.control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+
+}
+
+.control-formulario input{
+    width:100%;
+    padding: 8px;
+}
+
+.control {
+    width:100%;
+    padding: 8px;
+
+}
+
+.expendable {
+    display: none;
+}
+
 @media (min-width: 361px){
     article h3 {display: initial;}
     article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
@@ -200,7 +232,11 @@ article h3 {
     }
 
     .logo {width: 20vw;}
-    .search {width: 38vw;}
+    .search {
+        display: flex;
+        flex-direction: row;
+        width: 38%;
+        }
     .tagline {width: 38vw;}
     .bottom-header {
         display: flex;
@@ -209,16 +245,24 @@ article h3 {
         
     }
 
-    .bottom-menu {
-        display: flex;
-        flex-direction: row;
-        margin-left: 0.5cm;
+    header li a {
+        size: 12px;
     }
+
     .top-menu {
+        size: 10px;
         display: flex;
         flex-direction: row;
         margin-left: 0.5cm;
         }
+    
+    .bottom-menu {
+        size: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0.5cm;
+    }
+    
     .bottom-menu ul {
             display: flex;
             flex-direction: row;
@@ -265,11 +309,12 @@ article h3 {
     
     
     .article-list {
-        width: 100%;
+        width: 98%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: stretch;
+        padding: 0 5px 0 10px;
     }
     article {
         
