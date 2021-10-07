@@ -14,6 +14,7 @@ body {
 header {
     background-color: #EAC926;
     padding: 20px 0;
+    
 }
 .top-header {
     display: flex;
@@ -102,7 +103,16 @@ p {font-size: 12px;}
 
 nav {font-size: 12px;}
 article {margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     background-color: white;}
+
+.fa-truck{
+    transition: all 0.5s;
+}
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+}
 
 .descripcion{
     position: relative;
@@ -110,6 +120,7 @@ article {margin-bottom: 10px;
     padding: 15px;
 
 }
+
 
 img {
     width: 100%;
@@ -148,6 +159,12 @@ img {
 .Titulares {font-size: 24px;}
 .Precios {font-size: 18px;}
 
+
+
+article h3 {
+    display: none;
+}
+
 footer {align-items: center;
         color: #666;
         background-color: white;
@@ -171,13 +188,9 @@ footer p {
 .copyright {
     font-size: 10px;
     font-weight: normal;
-    text-align: left;
+    text-align: right;
 }
 
-
-article h3 {
-    display: none;
-}
 
 .top-menu {
     display: none;
@@ -191,6 +204,7 @@ article h3 {
 
 .control-formulario {
     margin-bottom: 20px;
+    
 }
 
 .control-formulario label {
@@ -205,9 +219,19 @@ article h3 {
     padding: 8px;
 }
 
+.control-formulario button{
+    transition: all 0.5s;
+}
+
+.control-formulario button:hover {
+    background-color:#0022AA;
+}
+
 .control {
     width:100%;
-    padding: 8px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
 
 }
 
@@ -216,8 +240,8 @@ article h3 {
 }
 
 @media (min-width: 361px){
-    article h3 {display: initial;}
-    article {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    
+    
     .top-header {
         display: flex;
         flex-direction: row;
@@ -317,9 +341,25 @@ article h3 {
         padding: 0 5px 0 10px;
     }
     article {
-        
+        transition: all 0.5s;
+        box-shadow: none;
         max-width: 48%;
         
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+        }
+            
+    
+
+    article h3 {
+        transition: all 0.5s;
+    }
+
+    article:hover h3{
+        display:initial;
     }
 }
 
@@ -328,10 +368,35 @@ article h3 {
         display:flex;
         flex-direction: row;
     }
-    article h3 {display: initial;}
-    article {box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    max-width: 24%;}
+    
+
+    article {
+    max-width: 24%;
+}
+
     .burger-menu {display: none}
+
+    article {
+        max-width: 24%;
+    }
     
 }
 
+@media (min-width: 1024px){
+    .footer-icon {
+        
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footer-icon i{
+        transition: color .5s;
+    }
+
+    .footer-icon i:hover {
+        color: red;
+    }
+}
