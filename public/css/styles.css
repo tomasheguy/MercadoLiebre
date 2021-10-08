@@ -26,8 +26,8 @@ header {
 
 .top-top-header {
     display: flex;
-    max-width: 100%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content:start;
     padding-bottom: 5px;
 }
 
@@ -41,10 +41,10 @@ header {
 .search-results {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content:center;
     align-items: center;
     font-size: 14px;
-    width: 50%;
+    width: 100%;
     border: none;
     border-radius: 3px;
     color: #666;
@@ -56,18 +56,23 @@ header {
     
     }
 
-
+.searchbar {
+    width: 95%;
+}
 
 .search-results button {
         position:relative;
-        right: 5px;
+        right: 1px;
         background-color:none;
         width: 20px;
         height: 18px;
         margin: -20px;
-        color: #666;
+        color: white;
         border-left: gray solid 3px;
-        border-radius: 3px;
+        border-bottom: none;
+        border-top: none;
+        border-right: none;
+        
     }
 .tagline {
     padding-left: 5px;
@@ -88,15 +93,12 @@ header {
     color:white;
     width: 28px;
     height: 28px;
-    ;
-    
-    border-radius:2px
+    border-radius:2px;
     }
 
 
 .burger-menu i {
     padding: 4px;
-
 }
 
 .bottom-header {
@@ -264,19 +266,24 @@ footer p {
         
     }
     .top-top-header {   
-        max-width: 60%;    
+        width: 60%; 
+        display:flex;
+        justify-content: space-between;
     }
     .mid-top-header {   
-        max-width: 40%;    
+        width: 40%;
+        display: flex;    
     }
 
-    .logo {width: 20%;}
+   
+
+    
     .search {
         display: flex;
         flex-direction: row;
         width: 38%;
         }
-    .tagline {width: 38%;
+    .tagline {width: 98%;
             font-size: 14px;}
     .bottom-header {
         display: flex;
@@ -295,14 +302,14 @@ footer p {
         /* size: 10px; */
         display: flex;
         flex-direction: row;
-        margin-left: 0.5cm;
+        
         }
     
     .bottom-menu {
         /* size: 10px; */
         display: flex;
         flex-direction: row;
-        margin-left: 0.5cm;
+        margin-left: 0.15cm;
     }
     
     .bottom-menu ul {
@@ -324,12 +331,12 @@ footer p {
     
     .bottom-menu ul li a {
         text-decoration: none;
-        font-size: 10px;
+        font-size: 12px;
         
     }
     .top-menu ul li a {
         text-decoration: none;
-        font-size: 10px;
+        font-size: 12px;
         
     }
 
