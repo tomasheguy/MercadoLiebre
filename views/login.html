@@ -20,7 +20,13 @@
                     <img class="logo" src="./images/logo-mercado-liebre.svg"  alt="Logo MercadoLiebre">
             
                     
-                    <p class="search"><input value="Busca productos, marcas"> <i class="fas fa-search"></i></p>
+                     
+                        <form class="search-results" action:"/search" method="POST">   
+                            <input class="searchbar" id="searchbar" type="text" placeholder="Busca productos, marcas" > 
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        
+                    
                     
                 </div>
                 <div class="mid-top-header">
@@ -62,7 +68,7 @@
                 <p></p><br>
             </div>
 
-            <img class="banner" src="./images/img-home-banner.jpg" alt="imagen del Home Banner">
+        <img class="banner" src="./images/img-home-banner.jpg" alt="imagen del Home Banner">
 
         </header>
         <main>
@@ -70,16 +76,20 @@
                 
                 
                 <div class="control-formulario>
-                    <label for="nombreusuario">Nombre de usuari@:</label>
-                    <input type="text" id="nombreusuario" name="nombreusuario" class="control">
+                    <div>
+                        <label for="nombreusuario">Nombre de usuari@:</label>
+                        <input type="text" id="nombreusuario" name="nombreusuario" class="control">
+                    </div>
                 </div>
 
                 
 
                 <div class="control-formulario>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" class="control">
-                </div>
+                    <div>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" class="control">
+                    </div>
+                </div><br>
 
                 <div class="control-formulario">
                     

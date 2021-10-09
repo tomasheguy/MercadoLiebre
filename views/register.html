@@ -20,7 +20,13 @@
                     <img class="logo" src="./images/logo-mercado-liebre.svg"  alt="Logo MercadoLiebre">
             
                     
-                    <p class="search"><input value="Busca productos, marcas"> <i class="fas fa-search"></i></p>
+                     
+                        <form class="search-results" action:"/search" method="POST">   
+                            <input class="searchbar" id="searchbar" type="text" placeholder="Busca productos, marcas" > 
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        
+                    
                     
                 </div>
                 <div class="mid-top-header">
@@ -62,7 +68,7 @@
                 <p></p><br>
             </div>
 
-            <img class="banner" src="./images/img-home-banner.jpg" alt="imagen del Home Banner">
+        <img class="banner" src="./images/img-home-banner.jpg" alt="imagen del Home Banner">
 
         </header>
         <main>
@@ -90,33 +96,40 @@
                 </div>
 
                 <div class="control-formulario">
-                    <label for="interestransaccion">Quiere comprar o vender:</label>
-                    <input type="radio" id="interestransaccion" name="interestransaccion" value="comprar">
-                    <label>Comprar</label>
-                    <input type="radio" id="interestransaccion" name="interestransaccion" value="vender">
-                    <label>Vender</label>
+                    <label for="interestransaccion">Quiere comprar o vender:</label><br>
+                    <div>
+                        <input type="radio" id="interestransaccion" name="interestransaccion" value="comprar" class="interes">
+                        <label class="label-interes">Comprar</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interestransaccion" name="interestransaccion" value="vender" class="interes">
+                        <label class="label-interes">Vender</label>
+                    </div>
                     
                 </div>
 
                 <div class="control-formulario">
-                    <label>Categorías de interés (puede elegir más de una):<label>
-                    
-                    <input type="checkbox" id="Electro" name="intereses" value="Electro" class="control">
-                    <label for="Electro">Electro:</label>
-                    
-                    <input type="checkbox" id="Moda" name="intereses" value="Moda" class="control>
-                    <label for="Moda">Moda:</label>
-
-                    
-                    <input type="checkbox" id="Hogar" name="intereses" value="Hogar" class="control>
-                    <label for="Hogar">Hogar:</label>
-                    
-                    <input type="checkbox" id="Jugueteria" name="intereses" value="Jugeteria" class="control>
-                    <label for="Jugueteria">Jugueteria:</label>
-                    
-                    <input type="checkbox" id="VidaSana" name="intereses" value="VidaSana" class="control>
-                    <label for="VidaSana">Hogar:</label>
-
+                    <label>Categorías de interés (puede elegir más de una):<label><br>
+                    <div>
+                        <input type="checkbox" id="Electro" name="intereses" value="Electro" class="interes">
+                        <label for="Electro">Electro:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Moda" name="intereses" value="Moda" class="interes">
+                        <label for="Moda">Moda:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Hogar" name="intereses" value="Hogar" class="interes">
+                        <label for="Hogar">Hogar:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Jugueteria" name="intereses" value="Jugeteria" class="interes">
+                        <label for="Jugueteria">Jugueteria:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="VidaSana" name="intereses" value="VidaSana" class="interes">
+                        <label for="VidaSana">Hogar:</label>
+                    </div>
                 </div>
 
                 <div class="control-formulario">
@@ -143,7 +156,8 @@
                         <input type="password" id="confirmpassword" name="confirmpassword" required minlength="5" class="control>
                     
                 </div>
-
+                <br>
+                <br>
                 <div class="control-formulario">
                     
                         <button type="submit"> Enviar</button>
