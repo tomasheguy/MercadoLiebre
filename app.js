@@ -34,4 +34,4 @@ app.post('/login', (req,res) =>{
 })
 
 
-app.listen(3030, () => console.log('levantaste el server con exito'));
+app.listen(process.env.PORT || 3030, () => console.log('levantaste el server con exito'));
